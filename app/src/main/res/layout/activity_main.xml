@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -14,7 +14,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/container"
-        android:name="com.example.recyclerview.basic.BasicRecyclerViewFragment"
+        android:name="com.example.recyclerview.another.AnotherRecyclerViewFragment"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
