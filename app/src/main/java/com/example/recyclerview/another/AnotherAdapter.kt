@@ -3,7 +3,6 @@ package com.example.recyclerview.another
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerview.R
 
@@ -18,7 +17,7 @@ class AnotherAdapter(private val clickListener: OnClickListener) : RecyclerView.
     }
 
     class ViewHolder (view : View): RecyclerView.ViewHolder(view){
-        val textView : TextView = view.findViewById(R.id.value)
+//        val textView : TextView = view.findViewById(R.id.value)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup,viewType: Int): AnotherAdapter.ViewHolder {
@@ -28,10 +27,10 @@ class AnotherAdapter(private val clickListener: OnClickListener) : RecyclerView.
     }
 
     override fun onBindViewHolder(holder: AnotherAdapter.ViewHolder, position: Int) {
-        holder.textView.text = dataList[position]
-        holder.textView.setOnClickListener{
-            clickListener.onItemClick(dataList[position])
-        }
+//        holder.textView.text = dataList[position]
+//        holder.textView.setOnClickListener{
+//            clickListener.onItemClick(dataList[position])
+//        }
     }
 
     override fun getItemCount(): Int {
